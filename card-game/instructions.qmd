@@ -1,0 +1,85 @@
+---
+title: "Data Science Workshop Game"
+format: pdf
+editor: source
+---
+# **Premise** 
+This is a resource allocation and discussion game that is intended to get people talking about the issues entailed in building a data science solution that is suitable for a specified project. 
+
+# **Aim**
+To be the person who accumulates the highest number of victory points by the end of the game. Victory points are gained by being part of a team that finishes in the top 3 each round.
+
+# **Format**
+Players will be divided into teams of about 8.
+There will be a series of rounds (probably around 3) lasting about 20 minutes each. 
+The rounds will consist of:
+
+* Formation of team				(1 minute)
+* Presentation of the mission			(2 minutes)
+* Allocation of resources – building of solution	(10 minutes)
+* Recording of solution				(3 minutes)
+* Judging and allocation of points			(4 minutes)
+Between rounds players will be expected to move between teams (i.e. form a new team each time)
+
+At the end of the game prizes will be given to the top 3 players.
+
+# **Set up**
+
+Players will be seated at round tables in teams of 8.
+At each table there will be a pool of staff and technology cards. 
+There will be an A3 Solution Sheet at the Table, which will be refreshed each round.
+
+# **Game Play**
+
+In each round:
+Players will sit at one of the tables.
+Game Moderators will present the round’s mission. 
+The mission will consist of a data science challenge that will require the teams to create a solution consisting of:
+
+* Solution Description
+* Staff
+* Technology
+
+The team will work together to build a solution to the challenge. They will agree what their team would do address the challenge if presented with this situation in real-life. This discussion will generate the Solution Description.
+The team will then select Staff and Technology that would be required to implement the solution described.
+The team will place their solution on the answer board (cards and written description). Moderators will photograph the solution for judging. 
+Teams are then disbanded and players move to different tables.
+
+The solution will be judged on the following:
+
+#### Description:		
+ 
+ * Does this solution make sense?	
+ * Would the staff and technology enable the implementation of this solution?
+
+#### Staff:		
+
+ * Are the skills possessed by the selected staff appropriate?
+ * Are all necessary skills present?
+ * Are there any unnecessary people?
+ * Is the team appropriately balanced?
+ 
+#### Technology:
+
+ * Is the selected technology appropriate?
+ * Are critical items missing?
+
+The teams' performance will be adjudged and Victory Points awarded as follows:
+
+| Position | Points Awarded | 
+|-----|:-----|
+| 1st | 3  |
+| 2nd | 2  |
+| 3rd | 1  |
+
+## Staff cards
+
+| Team member | Cost | Function
+|---|---|---|
+|Python specialist||Constructing machine learning models|
+|R specialist||Statistical modelling & data wrangling|
+|Shiny Developer||Constructing dashboards & interactive data viz|
+
+
+
+## Technology cards

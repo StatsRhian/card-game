@@ -1,0 +1,180 @@
+---
+title: "Game Rounds (for moderators)"
+format: pdf
+editor: source
+---
+
+**Use your own judgement for solutions. The provided solutions are only for guidance.**
+
+
+# Improving active travel in a large city
+  
+## Project overview
+  
+  A large city wants to pilot a new scheme to use data science to look at transport use in their area with an aim to improve active travel infrastructure and reduce inner-city car usage. Available data is from a 36 month period and includes
+  
+* You can access personal Strava data from those who record their active travel (e.g. those who walk, cycle or run to work) via an API. This data is publicly available but is personal; it may contain information about where people live or work.
+* Hourly bus usage statistics; approximate passenger numbers from a collection of key routes at hourly intervals. Information about routes is also available.
+* Hourly car usage statistics; number of ANPR (Automatic number plate recognition) hits at locations along key routes into and out of the city.
+
+The city wants to use this data to:
+  
+* Understand the daily and weekly transport demand cycle
+* Gain an understanding if there are trends in transport usage
+* Plan for further transport needs
+* Understand which active travel routes are commonly used
+* Identify where new active travel routes are required and where existing active travel routes are inadequate
+
+Personal or sensitive data (Strava routes) will be used. The city is keen for non-technical users (i.e. staff and public) to be able to interact with the data and to understand its meaning.
+
+The city would like to keep costs as low as possible, but wants to build a robust and expansible platform.
+
+The implementation of the system must be auditable and include structured reporting to management.
+
+## Challenge
+
+Propose and describe a solution that would enable a system to be implemented to store and analyse the city’s travel data. 
+
+Select the staff and technology needed to support the solution.
+
+Describe how the system would be expansible over the coming years.
+
+## Ideal solution
+
+### Description
+
+Data-visualisation heavy solution; e.g. a dashboard/map which highlights key active travel routes used by commuters and key bus routes and/or graphs which convey descriptive statistics about commuting methods. Some simple statistical modelling may be used to identify and analyse trends in the data.
+
+
+### Skills
+
+Data visualisation expert; Dashboard developer; Data engineer; Data scientist; Data Wrangler
+
+### Technologies
+
+Dashboard hosting environment; automated reporting software (e.g. Quarto); Basic database (SQL)
+
+
+\newpage
+
+# Tax record matching
+
+## Project overview
+
+A government agency has wants to reduce fraud. They also want to reduce the number of manual checks that are performed. The agency believes that a good understanding of potentially fraudulent records can be gained through the analysis of existing data and comparing new tax records to existing data. 
+
+The agency's fraud team need to understand the factors that increase the probability of a record being fraudulent (e.g. links to suspicious bank accounts or inconsistencies when comparing to other data sources).
+
+The government agency want you to implement a system that examines new tax records as they are created and flags potentially fraudulent tax records. The various data sources are in a variety of formats thus solution must be able to combine data sources of various formats.
+
+The management want the system to learn from experience so that automatic checks can replace manual checks. Manual checks are time consuming and expensive, therefore the government agency wants false positives to reduced to an absolute minimum, however, identifying fraudulent tax records if of paramount importance. 
+
+This project will require the use of personally identifiable data. The decisions made by the system must be interpretable.
+
+The project must have a working version in place quickly. The working version need not be the final version, but must indicate how an automated solution would work.
+
+## Challenge
+
+Propose and describe a solution that would enable fraud checks to be made on tax records. Explain how the data would be analysed, how existing knowledge would be incorporated, how the system would improve its performance.
+
+Explain how sensitive data would be managed and how the system would be implemented. Select the staff and technology needed to support the solution.
+
+## Ideal solution
+
+### Description
+
+A small version of the "final" solution will be provided using e.g. a subset of all available data.
+
+The final solution should be interpretable and will draw on methods from reinforcement learning to allow the system to learn on its own. Statistical methods must also be employed to allow for interpretability.
+
+### Skills
+
+Security expert; Reinforcement learning specialist; Data architect; Statistical modeller; Project manager
+
+### Technologies
+
+Secure database; Database
+
+\newpage
+
+# Video app analytics
+
+## Project overview
+
+A mobile phone app with video content has launched and wants to develop an algorithm which understands app users preferences to construct a recommendation algorithm.
+
+The app records huge volumes of data about users. It collects data about the type of content in the videos an individual user watches, the times during the day at which a user is most active (including engagement with push notifications to mobile devices). The app also requests personal information about each user including their age, gender and location.
+
+Because the app generates huge volumes of data about each user, and there is the potential for millions of users, in-house data storage is becoming an increasingly infeasible option.
+
+The company wants to detect where which video recommendations are most effective. The company wants to gain an understanding of user interests for advertising and monetisation purposes.
+
+The company wants to understand what would be an individual customer's total lifetime value to enable budgeting and to highlight where effort to retain customers should be targeted. 
+
+The company does not have its own datacentre and all services are operated from an Amazon Web Services environment.
+
+The project will entail the use of sensitive personal data; although the app is not designed for children it is known that children use the app.
+
+## Challenge
+
+Propose and describe a solution that would enable app data to be analysed and for user behaviour to be understood. 
+
+Explain how recommendations could be made both for interventions to enhance engagement and to allow for monetisation.
+
+Explain how sensitive data would be managed and how the system would be implemented.
+
+Select the staff and technology needed to support the solution.
+
+## Ideal solution
+
+### Description
+
+Develop a recommendation algorithm using reinforcement learning. Considerations for child users are critical.
+
+### Skills
+
+Data engineer; Ethical AI expert; Reinforcement learning specialist; Software engineer; Cloud computing expert
+
+### Technologies
+
+Cloud computing; Advanced analytics
+
+\newpage
+
+# Identifying marine litter
+
+## Project overview
+
+An Non-Governmental Organisation is interested identifying marine litter and understanding the paths large bodies of marine litter (BML) takes across oceans. The NGO has a large database of images which track the journey of thousands of large marine litter bodies over time.
+
+The agency would like to develop a system that can predict where the large BMLs may end up. In particular, the NGO are interested in predicting whether the litter bodies will end up travelling into a marine protected area (MPA). In an MPA, human activity is often restricted to protect wildlife, or to protect important natural resources.
+
+The agency holds many thousands of image files for each BML, tracking its movement over several years. The images are not necessarily collected at equally spaced time intervals; images may be obfuscated by cloud coverage. Expert knowledge can help analyse BML paths which are obfuscated by cloud coverage.
+
+The data is not considered sensitive.
+
+The NGO has secured funding for cloud computing services to perform analysis.
+
+The agency believes that system performance may be enhanced by blending data from multiple sources into a single analysis.
+
+The agency prefers the use of open-source tools to control costs.
+
+Algorithm interpretability is not critical provided that the predicted paths of BMLs is accurate.
+
+## Challenge
+
+Propose and describe a solution that would enable analysis of BML and be able to predict if a BML is likely to enter a MPA. Explain how to deal with the inconsistent nature of the data and how to account for cloud overage. 
+
+Explain which technologies and staff are needed  to support the solution.
+
+### Description
+
+Develop an algorithm/predictive model which can predict the trajectories of BML. The model should incorporate expert knowledge via e.g. a Bayesian approach. Spatial statistics is relevant to predictions (e.g. Kriging models).
+
+### Skills
+
+Cloud computing expert; Bayesian specialist; Spatial statistics specialist
+
+### Technologies
+
+Cloud computing; Advanced analytics

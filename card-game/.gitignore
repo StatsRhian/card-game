@@ -1,0 +1,18 @@
+.env
+.DS_Store
+*.env
+*.swp
+.Rproj.user
+.Rhistory
+
+
+# things quarto makes
+
+*html
+*pdf
+
+## ignore temp word files
+
+/old_materials/.~lock*
+
+

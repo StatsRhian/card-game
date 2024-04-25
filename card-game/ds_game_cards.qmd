@@ -1,0 +1,137 @@
+---
+format: pdf
+editor: source
+---
+
+```{r}
+#| label: r-setup
+#| echo: false
+#| message: false
+library(tidyverse)
+library(ggplot2)
+library(cowplot)
+library(magick)
+this_place = here::here()
+source(paste0(this_place, "/r/player_card.R"))
+```
+
+```{r}
+#| label: sheet1
+#| echo: false
+#| message: false
+#| warning: false
+#| layout-ncol: 2
+#| layout-nrow: 2
+
+showtext::showtext_auto()
+sysfonts::font_add_google("indie flower")
+
+
+player_card(tibble(
+  title = "Spatial analyst",
+  img_path = "cartoons/headshots/Rhian.jpg",
+  primary = "Geospatial statistics\n&geospatial visualisation",
+  secondary = "Statistical computing\n& using large datasets"), 
+  family = "indie flower")
+
+player_card(tibble(
+  title = "Data Scientist",
+  img_path = "cartoons/headshots/Jack.jpg",
+  primary = "Modelling & \n automated reporting",
+  secondary = "Obtaining data\nvia APIs"), 
+  family = "indie flower")
+
+player_card(tibble(
+  title = "Visualisation specialist",
+  img_path = "cartoons/headshots/Nicola.jpg",
+  primary = "Producing insightful\ndata visualisations",
+  secondary = "Written\ncommunications"),  
+  family = "indie flower")
+
+player_card(tibble(
+  title = "Shiny developer",
+  img_path = "cartoons/headshots/Deborah.jpg",
+  primary = "Interactive data\nvisualisations with {rshiny}",
+  secondary = "Basic web\ndevelopment"),  
+  family = "indie flower")
+```
+
+\newpage
+```{r}
+#| label: sheet2
+#| echo: false
+#| message: false
+#| warning: false
+#| layout-ncol: 2
+#| layout-nrow: 2
+
+player_card(tibble(
+  title = "Ethics Expert",
+  img_path = "cartoons/headshots/Helen.jpg",
+  primary = "Responsible machine\nlearning algorthims",
+  secondary = "Data \n governance"), 
+  family = "indie flower")
+
+player_card(tibble(
+  title = "Data Engineer",
+  img_path = "cartoons/headshots/Josh.jpg",
+  primary = "Constructing data\npipelines",
+  secondary = "Model deployment"), 
+  family = "indie flower")
+
+player_card(tibble(
+  title = "Software developer",
+  img_path = "cartoons/headshots/Esther.jpg",
+  primary = "Front end\napp development",
+  secondary = "Backend\nengineering"),  
+  family = "indie flower")
+
+player_card(tibble(
+  title = "Statistician",
+  img_path = "cartoons/headshots/Myles.jpg",
+  primary = "Interpretable\nmodelling",
+  secondary = "Data wrangling"),  
+  family = "indie flower")
+
+
+```
+
+\newpage
+```{r}
+#| label: sheet3
+#| echo: false
+#| message: false
+#| warning: false
+#| layout-ncol: 2
+#| layout-nrow: 2
+
+player_card(tibble(
+  title = "Bayesian specialist",
+  img_path = "cartoons/headshots/Anmol.jpg",
+  primary = "Incorporating expert\nopinion into analyses",
+  secondary = "Statistical\ncomputing"), 
+  family = "indie flower")
+
+player_card(tibble(
+  title = "Security expert",
+  img_path = "cartoons/headshots/Liam.jpg",
+  primary = "Data security",
+  secondary = "Managing\ncloud services"), 
+  family = "indie flower")
+
+player_card(tibble(
+  title = "ML specialist",
+  img_path = "cartoons/headshots/Georgia.jpg",
+  primary = "Deep learning\n& reinforcement learning",
+  secondary = "Cloud\ncomputing"),  
+  family = "indie flower")
+
+player_card(tibble(
+  title = "Project manager",
+  img_path = "cartoons/headshots/Gemma.jpg",
+  primary = "Task scheduling &\nidentifying deliverables",
+  secondary = "Conflict\nresolution"),  
+  family = "indie flower")
+
+
+```
